@@ -13,10 +13,10 @@ export const navbarData = {
         columns: 3,
         content: [
           {
-            title: "New to MultiVendor.com",
+            title: "New to Pakbay.com",
             items: [
-              { title: "What is MultiVendor.com", url: "/..........", desc: "Discover our platform's features" },
-              { title: "How MultiVendor.com Works", url: "/..........", desc: "Step-by-step guide for beginners" },
+              { title: "What is Pakbay.com", url: "/..........", desc: "Discover our platform's features" },
+              { title: "How Pakbay.com Works", url: "/..........", desc: "Step-by-step guide for beginners" },
               { title: "Buyer Success Stories", url: "/..........", desc: "See how businesses grow with us" },
               { title: "Seller Success Stories", url: "/..........", desc: "Vendors thriving on our platform" }
             ]
@@ -43,7 +43,7 @@ export const navbarData = {
       }
     },
     { 
-      title: "Why MultiVendor.com", 
+      title: "Why Pakbay.com", 
       url: "/..........",
       megaMenu: {
         columns: 2,
@@ -98,7 +98,7 @@ export const navbarData = {
           {
             title: "Financial Services",
             items: [
-              { title: "MultiVendor Business Credit", url: "/..........", desc: "Exclusive financing" },
+              { title: "Pakbay Business Credit", url: "/..........", desc: "Exclusive financing" },
               { title: "Trade Financing", url: "/..........", desc: "Order funding" },
               { title: "Payment Solutions", url: "/..........", desc: "Multi-currency options" },
               { title: "Tax Services", url: "/..........", desc: "Cross-border compliance" }
