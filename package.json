@@ -13,6 +13,7 @@
     "@react-oauth/google": "^0.12.1",
     "framer-motion": "^12.6.3",
     "headlessui": "^0.0.0",
+    "lucide-react": "^0.487.0",
     "next": "^15.2.4",
     "next-auth": "^4.24.11",
     "react": "^19.0.0",
