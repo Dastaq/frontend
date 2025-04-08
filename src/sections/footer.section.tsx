@@ -1,5 +1,5 @@
 
-import { BrandName } from '../brandname';
+import { BrandName } from '@/brandname';
 import Footer from '../component/footer.component';
 import { FOOTER_LINKS , SOCIAL_MEDIA, PAYMENT_METHODS } from '../constant/footer.constant';
 

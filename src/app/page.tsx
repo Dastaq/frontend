@@ -1,9 +1,9 @@
-import HeroSection from "./sections/hero.section";
-import ProductGrid from "./sections/product.section";
-import FooterSection from "./sections/footer.section";
-import { OfferLine } from "./component/offerline.component";
-import TopAnnouncementBar from "./component/announcement.component";
-import NavbarSection from "./sections/navbar.section";
+// Importing necessary components and styles
+import { OfferLine } from "@/component/offerline.component";
+import FooterSection from "@/sections/footer.section";
+import HeroSection from "@/sections/hero.section";
+import NavbarSection from "@/sections/navbar.section";
+import ProductGrid from "@/sections/product.section";
 
 export default function Home() {
   return (
@@ -14,7 +14,6 @@ export default function Home() {
         <HeroSection/>
         <ProductGrid/>
         <FooterSection/>
-
       </>
 
 

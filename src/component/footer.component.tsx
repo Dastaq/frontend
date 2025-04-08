@@ -6,13 +6,15 @@ import {
   FaCcVisa, FaCcMastercard, FaPaypal, FaApple, FaGoogle,
 } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
-import { FooterProps } from '../type/footer';
-import Input from './UI/input';
-import { Button } from './UI/button';
 import { JSX, useState } from 'react';
 import toast from 'react-hot-toast';
-import { HelpPages } from '../constant/footer.constant';
-import { BrandName } from '../brandname';
+import { FooterProps } from '@/type/footer';
+import Input from './UI/input';
+import { Button } from './UI/button';
+import { BrandName } from '@/brandname';
+import { HelpPages } from '@/constant/footer.constant';
+
+
 
 const Footer = ({
   footerLinks = {},
@@ -99,7 +101,7 @@ const Footer = ({
                focus:border-transparent transition-all"
                 required
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                // onChange={(e) => setEmail(e.target.value)}
                 disabled={isSubmitting}
                 inputMode="email"
               />
@@ -190,7 +192,7 @@ const Footer = ({
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm">
             <span className="font-montserrat text-gray-500 mb-3 md:mb-0">
-              &copy; {currentYear} <BrandName /> {copyrightText}
+              &copy; {currentYear} <BrandName/> {copyrightText}
             </span>
             <div className="flex gap-6">
               {HelpPages.map((page) => (

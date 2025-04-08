@@ -1,8 +1,8 @@
-import Input from './UI/input';
-import { Button } from './UI/button';
 import { FaEnvelope, FaLock, FaUser, FaGoogle, FaFacebook } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Input from './UI/input';
+import { Button } from './UI/button';
 
 interface AuthFormProps {
   type: 'login' | 'create account';

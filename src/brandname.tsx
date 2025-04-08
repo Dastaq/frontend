@@ -4,7 +4,7 @@ export function BrandName() {
     return (
         <>
         <motion.p>
-            Dastak
+            Pakbay
         </motion.p>
         </>
     );
