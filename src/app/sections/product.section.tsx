@@ -1,7 +1,6 @@
+
 'use client';
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
-import { StarIcon, ShoppingBagIcon } from '@heroicons/react/24/outline';
 import { Product } from '../type/product.type'; 
 import { ProductCard } from '../component/productcard.component';
 import { Button } from '../component/UI/button';

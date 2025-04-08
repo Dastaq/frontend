@@ -18,7 +18,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: " Pakistan's Premier E-Commerce",
+  title: "PakBay",
   description: "Your premium online shopping destination in Pakistan",
 };
 
