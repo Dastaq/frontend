@@ -1,6 +1,7 @@
-import { NavConfig } from "../type/primarynavbar";
 
-  
+
+
+import { NavConfig } from "../type/primarynavbar";
   export const NAV_CONFIG: NavConfig = {
     brand: {
       name: "PakBay",

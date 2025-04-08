@@ -1,5 +1,5 @@
-import SupplierRegistrationForm from "@/app/component/supplier/registration";
+import SupplierRegistrationForm from "@/component/supplier/registration";
 
 export default function SupplierRegistrationPage() {
-  return <SupplierRegistrationForm/>
+  return <SupplierRegistrationForm />
 }

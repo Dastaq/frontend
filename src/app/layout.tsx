@@ -19,7 +19,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "PakBay",
-  description: "Your premium online shopping destination in Pakistan",
+  description: "Premium online shopping destination in Pakistan",
 };
 
 export default function RootLayout({

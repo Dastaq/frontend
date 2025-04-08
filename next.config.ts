@@ -4,24 +4,20 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
+        protocol: "https",
+        hostname: "images.unsplash.com",
       },
       {
-        protocol: 'https',
-        hostname: 'plus.unsplash.com',
+        protocol: "https",
+        hostname: "plus.unsplash.com",
       },
       {
-        protocol: 'https',
-        hostname: 'fakestoreapi.com',
+        protocol: "https",
+        hostname: "fakestoreapi.com",
       },
     ],
-    domains: ['fakestoreapi.com'], // Only needed if you're using the legacy 'domains' config
+    domains: ["fakestoreapi.com"],
   },
-  // Optional: Add experimental features if needed
-  // experimental: {
-  //   serverActions: true,
-  // },
 };
 
 export default nextConfig;

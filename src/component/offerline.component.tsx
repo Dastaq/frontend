@@ -9,11 +9,11 @@ export const OfferLine = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="bg-gradient-to-r from-purple-600 to-blue-500 py-3 px-4 shadow-lg relative">
+    <div className="bg-secondary py-3 px-4 border border-b-2 border-white relative">
       {/* Close button */}
       <button 
         onClick={() => setIsVisible(false)}
-        className="absolute right-2 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-200 transition-colors"
+        className="absolute right-2 top-1/2 text-white hover:text-gray-200 transition-colors"
         aria-label="Close offer banner"
       >
         <FaTimes className="h-5 w-5" />

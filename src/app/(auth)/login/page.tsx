@@ -1,7 +1,9 @@
+
+
 'use client';
-import AuthForm from '@/app/component/auth.component';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation'; 
+import AuthForm from '@/component/auth.component';
 
 const LoginPage = () => {
   const [loading, setLoading] = useState(false);

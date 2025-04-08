@@ -1,11 +1,9 @@
 
 
 'use client';
-
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
-
 import { slides } from '../constant/slider.constant';
 
 const HeroSection = () => {
@@ -68,9 +66,11 @@ const HeroSection = () => {
                 {slides[currentSlide].subtitle}
               </h3>
               
+              
               {/* Description - Slightly Larger */}
               <p className="mb-8 text-xl">{slides[currentSlide].description}</p>
               
+
               {/* CTA Button - More Prominent */}
               <motion.button
                 whileHover={{ scale: 1.05 }}

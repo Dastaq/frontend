@@ -1,3 +1,5 @@
+
+
 // Importing necessary components and styles
 import { OfferLine } from "@/component/offerline.component";
 import FooterSection from "@/sections/footer.section";

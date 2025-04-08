@@ -6,8 +6,7 @@ import toast from 'react-hot-toast';
 import Image from 'next/image';
 import { FiShoppingCart, FiArrowRight, FiStar, FiUserPlus } from 'react-icons/fi';
 import { BsPatchCheckFill, BsCurrencyDollar } from 'react-icons/bs';
-import { Spinner } from '@/app/component/UI/spinner';
-// import Spinner from '@/app/component/UI/spinner';
+import { Spinner } from '@/component/UI/spinner';
 
 type Product = {
   id: number;
@@ -65,7 +64,7 @@ export default function ProductDetail() {
 
   if (loading) return (
     <div className="min-h-screen flex items-center justify-center">
-      <Spinner />
+      <Spinner/>
     </div>
   );
 

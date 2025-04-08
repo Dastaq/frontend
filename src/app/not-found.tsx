@@ -1,4 +1,5 @@
-// app/not-found.tsx
+
+
 import Link from 'next/link';
 import { Button } from '../component/UI/button';
 
@@ -12,7 +13,7 @@ export default function NotFound() {
         <p className="text-gray-600 mb-6">
           The page you're looking for doesn't exist or has been moved.
         </p>
-        <Button >
+        <Button>
           <Link href="/" className="inline-flex">
             Return Home
           </Link>

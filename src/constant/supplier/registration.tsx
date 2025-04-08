@@ -1,4 +1,4 @@
-// File: constants/supplier.ts
+
 
 export const SUPPLIER_FORM_FIELDS = {
     businessName: {
