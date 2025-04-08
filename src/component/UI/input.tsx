@@ -1,5 +1,5 @@
 // File: components/Input.tsx
-import { InputProps } from '@/app/type/input';
+import { InputProps } from '@/type/input';
 import React, { forwardRef } from 'react';
 
 const sizeClasses = {

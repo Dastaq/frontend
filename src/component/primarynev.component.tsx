@@ -18,7 +18,7 @@ export function PrimaryNavBar() {
   const toggleUserMenu = () => setUserMenuOpen(!userMenuOpen);
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-blue-500 text-white shadow-sm sticky top-0 z-50">
       
       {/* Main Navigation */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

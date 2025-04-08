@@ -1,6 +1,6 @@
   export const topLinks = [
     { label: "Help", href: "customercare" },
-    { label: "Buyer Central", href: "#" },
+    { label: "Buyer Central", href: "buyer-central" },
     { label: "Sell on Platform", href: "supplier-registration" }
   ]
 

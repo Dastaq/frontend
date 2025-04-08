@@ -41,11 +41,11 @@ export const FOOTER_LINKS = {
   };
   
   export const SOCIAL_MEDIA = [
-    { name: "Facebook", icon: "FaFacebook", href: "#" },
-    { name: "Instagram", icon: "FaInstagram", href: "#" },
-    { name: "X", icon: "FaXTwitter", href: "#" },
-    { name: "Pinterest", icon: "FaPinterest", href: "#" },
-    { name: "YouTube", icon: "FaYoutube", href: "#" },
+    { name: "Facebook", icon: "FaFacebook", href: "/" },
+    { name: "Instagram", icon: "FaInstagram", href: "/" },
+    { name: "X", icon: "FaXTwitter", href: "/" },
+    { name: "Pinterest", icon: "FaPinterest", href: "/" },
+    { name: "YouTube", icon: "FaYoutube", href: "/" },
   ];
   
   export const PAYMENT_METHODS = [

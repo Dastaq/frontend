@@ -1,4 +1,6 @@
-import { FaEnvelope, FaLock, FaUser, FaGoogle, FaFacebook } from 'react-icons/fa';
+
+'use client';
+import { FaGoogle } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Input from './UI/input';

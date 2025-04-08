@@ -1,8 +1,12 @@
+
+
+
+'use client';
 import { forwardRef } from 'react';
-import { ButtonProps } from '@/app/type/button';
 import { Spinner } from './spinner';
+import { ButtonProps } from '@/type/button';
 
-
+// Define size classes for different button sizes
 const sizeClasses = {
   sm: 'py-2 px-3 text-sm',
   md: 'py-2.5 px-4 text-base',
@@ -10,6 +14,7 @@ const sizeClasses = {
   xl: 'py-4 px-6 text-xl',
 };
 
+// Define variant classes for different button styles
 const variantClasses = {
   primary: 'bg-indigo-600 hover:bg-indigo-700 text-white',
   secondary: 'bg-gray-900 hover:bg-gray-800 text-white',
@@ -18,6 +23,7 @@ const variantClasses = {
   danger: 'bg-red-600 hover:bg-red-700 text-white',
 };
 
+// Define rounded corner classes
 const roundedClasses = {
   none: 'rounded-none',
   sm: 'rounded-sm',
@@ -26,6 +32,7 @@ const roundedClasses = {
   full: 'rounded-full',
 };
 
+// Button component using forwardRef
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
@@ -44,7 +51,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     },
     ref
   ) => {
-    // Handle custom variants (if variant doesn't exist in variantClasses)
+
     const variantClass = variantClasses[variant as keyof typeof variantClasses] || 
       `bg-${variant}-600 hover:bg-${variant}-700 text-white`;
 
@@ -87,3 +94,5 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     );
   }
 );
+
+Button.displayName = 'Button'; 

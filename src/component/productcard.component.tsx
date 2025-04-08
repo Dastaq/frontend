@@ -1,3 +1,6 @@
+
+
+
 'use client';
 import Image from 'next/image';
 import { StarIcon, ShoppingBagIcon } from '@heroicons/react/24/outline';
@@ -84,4 +87,3 @@ export const ProductCard = ({ product }: { product: Product }) => {
     </div>
   );
 };
-

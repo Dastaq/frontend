@@ -1,5 +1,7 @@
-'use client';
 
+
+
+'use client';
 import Link from 'next/link';
 import {
   FaFacebook, FaInstagram, FaYoutube,
@@ -47,6 +49,7 @@ const Footer = ({
     return icons[iconName] || null;
   };
 
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -80,6 +83,7 @@ const Footer = ({
     <footer className="bg-gray-950 text-gray-400">
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+      
           {/* Newsletter Section */}
           <div className="lg:col-span-2">
             <h3 className="text-white text-xl font-semibold mb-6 font-poppins tracking-wide">
@@ -101,7 +105,6 @@ const Footer = ({
                focus:border-transparent transition-all"
                 required
                 value={email}
-                // onChange={(e) => setEmail(e.target.value)}
                 disabled={isSubmitting}
                 inputMode="email"
               />

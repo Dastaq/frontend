@@ -62,7 +62,7 @@ import { NavConfig } from "../type/primarynavbar";
         name: "Register",
         href: "/register",
       },
-    },
+    }, 
     userMenu: {
       dashboard: "Dashboard",
       orders: "My Orders",

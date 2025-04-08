@@ -1,14 +1,12 @@
 export const Spinner = () => {
-    return (
+  return (
+    <div className="flex space-x-2 justify-center items-center bg-white h-screen ">
+      <span className="sr-only">Loading...</span>
+      <div className="h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:-0.3s]" />
+      <div className="h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:-0.15s]" />
+      <div className="h-8 w-8 bg-black rounded-full animate-bounce" />
+    </div>
 
-        <div
-        
-        className="inline-block h-8 w-8 animate-[spinner-grow_0.75s_linear_infinite] rounded-full bg-current align-[-0.125em] text-surface opacity-0 motion-reduce:animate-[spinner-grow_1.5s_linear_infinite] dark:text-white"
-        role="status">
-        <span
-          className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
-          >Loading...</span>
-      </div>
-    )
+  )
 
 }

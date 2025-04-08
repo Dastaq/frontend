@@ -15,7 +15,7 @@ export const slides = [
       title: 'Best Sellers',
       subtitle: 'Shop Our Customer Favorites',
       description: 'Discover the products everyone is talking about',
-      cta: 'Explore Bestsellers',
+      cta: 'Explore Bestsellers', 
       bgColor: 'bg-gradient-to-r from-blue-500 to-purple-600',
       image: 'https://plus.unsplash.com/premium_photo-1681488262364-8aeb1b6aac56?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGUlMjBjb21tZXJjZXxlbnwwfHwwfHx8MA%3D%3D',
     },
