@@ -29,11 +29,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${poppins.variable} ${montserrat.variable}`}>
-      <body className="font-sans antialiased select-none bg-gray-150">
-        <AuthProvider>
-          {children}
-       
-          </AuthProvider>
+      <body className="font-sans mx-auto antialiased select-none bg-gray-150">
+           <AuthProvider>
+              {children}
+           </AuthProvider>
       </body>
     </html>
   );

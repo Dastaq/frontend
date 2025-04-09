@@ -1,7 +1,7 @@
 
 
 // Importing necessary components and styles
-import { OfferLine } from "@/component/offerline.component";
+import { OfferBanner } from "@/component/OfferBanner.component.tsx";
 import { Spinner } from "@/component/UI/spinner";
 import FooterSection from "@/sections/footer.section";
 import HeroSection from "@/sections/hero.section";
@@ -14,7 +14,7 @@ export default function Home() {
 
     <>
     
-      <OfferLine />
+      <OfferBanner />
       <NavbarSection />
       <HeroSection />
       <ProductGrid />

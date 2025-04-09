@@ -9,7 +9,7 @@ const TopAnnouncementBar = () => {
 
   return (
     <div className="bg-blue-500 text-white text-sm py-2 px-4">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+      <div className="container max-w-7xl mx-auto flex justify-between items-center">
         <div className="flex space-x-6">
           {topLinks.map((link, index) => (
             <Link key={index} href={link.href} className="hover:text-primary transition-colors">

@@ -5,7 +5,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import { ChevronDown, Menu, X } from "lucide-react"
-import { BrandName } from "@/brandname"
+import { BrandName } from "@/component/brandname"
 import { navbarData } from "@/constant/primarynavbar.constant"
 
 export default function PrimaryNavBar() {
@@ -30,7 +30,7 @@ export default function PrimaryNavBar() {
   return (
     <header className="bg-white shadow-sm relative">
       {/* Top Navigation */}
-      <div className="container mx-auto px-4">
+      <div className="mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
