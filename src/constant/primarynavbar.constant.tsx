@@ -143,33 +143,33 @@ export const navbarData = {
         ]
       }
     },
-    { 
-      title: "Webinars", 
-      url: "/..........",
-      megaMenu: {
-        columns: 2,
-        content: [
-          {
-            title: "Upcoming Events",
-            items: [
-              { title: "Global Sourcing Summit", url: "/..........", desc: "Annual vendor conference" },
-              { title: "New Features Workshop", url: "/..........", desc: "Platform updates" },
-              { title: "Industry Deep Dives", url: "/..........", desc: "Sector-specific webinars" },
-              { title: "Seller Masterclass", url: "/..........", desc: "Vendor growth strategies" }
-            ]
-          },
-          {
-            title: "On-Demand Learning",
-            items: [
-              { title: "E-commerce Academy", url: "/..........", desc: "Self-paced courses" },
-              { title: "Sourcing Best Practices", url: "/..........", desc: "Recorded sessions" },
-              { title: "Case Study Library", url: "/..........", desc: "Success breakdowns" },
-              { title: "Platform Tutorials", url: "/..........", desc: "Feature walkthroughs" }
-            ]
-          }
-        ]
-      }
-    }
+    // { 
+    //   title: "Webinars", 
+    //   url: "/..........",
+    //   megaMenu: {
+    //     columns: 2,
+    //     content: [
+    //       {
+    //         title: "Upcoming Events",
+    //         items: [
+    //           { title: "Global Sourcing Summit", url: "/..........", desc: "Annual vendor conference" },
+    //           { title: "New Features Workshop", url: "/..........", desc: "Platform updates" },
+    //           { title: "Industry Deep Dives", url: "/..........", desc: "Sector-specific webinars" },
+    //           { title: "Seller Masterclass", url: "/..........", desc: "Vendor growth strategies" }
+    //         ]
+    //       },
+    //       {
+    //         title: "On-Demand Learning",
+    //         items: [
+    //           { title: "E-commerce Academy", url: "/..........", desc: "Self-paced courses" },
+    //           { title: "Sourcing Best Practices", url: "/..........", desc: "Recorded sessions" },
+    //           { title: "Case Study Library", url: "/..........", desc: "Success breakdowns" },
+    //           { title: "Platform Tutorials", url: "/..........", desc: "Feature walkthroughs" }
+    //         ]
+    //       }
+    //     ]
+    //   }
+    // }
   ],
   utilityNav: [
     {
