@@ -1,82 +1,53 @@
-
-
 'use client';
-import { useState } from 'react';
-import { useRouter } from 'next/navigation'; 
-import AuthForm from '@/component/auth.component';
 
-const LoginPage = () => {
+import { AuthForm } from '@/component/auth.component';
+import { BrandName } from '@/component/brandname';
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
+
+export default function LoginPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const router = useRouter(); 
+  const router = useRouter();
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    setError(null); 
-
+    setError(null);
+    
     try {
+      const formData = new FormData(e.currentTarget);
+      const email = formData.get('email') as string;
+      const password = formData.get('password') as string;
 
-      // Simulated user ID with demo data
-      const userId = Math.floor(Math.random() * 1000); 
-      console.log('Logging in...');
-
-      // Redirect to /profile/{userId} on successful "login"
-      router.push(`/profile/${userId}`);
-
-      /*
-      // Backend API Call Example (Uncomment for real implementation)
+      // Replace with your actual authentication logic
       const response = await fetch('/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          email: e.target.email.value, 
-          password: e.target.password.value,
-        }),
-        });
-      
-        if (!response.ok) throw new Error('Login failed');
-      const data = await response.json();
-      const userId = data.userId; 
-      router.push(`/profile/${userId}`);
-      */
-
-      /*
-      // Google OAuth Example 
-      // 
-      import { useGoogleLogin } from '@react-oauth/google';
-      const googleLogin = useGoogleLogin({
-        onSuccess: async (tokenResponse) => {
-          const res = await fetch('/api/auth/google', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ token: tokenResponse.access_token }),
-          });
-          if (!res.ok) throw new Error('Google login failed');
-          const data = await res.json();
-          const userId = data.userId; // Assuming API returns userId
-          router.push(`/profile/${userId}`);
-        },
-        onError: () => {
-          throw new Error('Google authentication failed');
-        },
+        body: JSON.stringify({ email, password }),
       });
-      googleLogin(); // Trigger Google login
-      */
+
+      if (!response.ok) {
+        throw new Error(await response.text());
+      }
+
+      router.push('/dashboard');
     } catch (err) {
-      setError('Failed to log in.');
-      console.error(err);
+      setError(err instanceof Error ? err.message : 'An error occurred');
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <AuthForm type="login" onSubmit={handleSubmit} loading={loading} />
-      {error && <p className="mt-2 text-red-500">{error}</p>}
+    <div className="flex min-h-screen items-center justify-center bg-gray-50 p-4">
+      <AuthForm
+        type="login"
+        onSubmit={handleSubmit}
+        loading={loading}
+        error={error}
+        brand= {<BrandName/>}
+      />
     </div>
   );
-};
-
-export default LoginPage;
+}

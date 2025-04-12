@@ -1,82 +1,60 @@
-
-
 'use client';
-import { useState } from 'react';
-import { useRouter } from 'next/navigation'; 
-import AuthForm from '@/component/auth.component';
 
-const SignupPage = () => {
+import { AuthForm } from '@/component/auth.component';
+import { BrandName } from '@/component/brandname';
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
+
+export default function SignupPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const router = useRouter(); 
+  const router = useRouter();
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    setError(null); 
-
+    setError(null);
+    
     try {
-      // Simulated user ID with demo data
-      const userId = Math.floor(Math.random() * 1000); 
-      console.log('Signing up...');
+      const formData = new FormData(e.currentTarget);
+      const name = formData.get('name') as string;
+      const email = formData.get('email') as string;
+      const password = formData.get('password') as string;
+      const confirmPassword = formData.get('confirmPassword') as string;
 
-      // Redirect to /profile/{userId} on successful "signup"
-      router.push(`/profile/${userId}`);
+      if (password !== confirmPassword) {
+        throw new Error('Passwords do not match');
+      }
 
-      /*
-      // Backend API Call Example (Uncomment for real implementation)
+      // Replace with your actual registration logic
       const response = await fetch('/api/auth/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          email: e.target.email.value, // Assuming form has email field
-          password: e.target.password.value, // Assuming form has password field
-          // Add more fields like name, etc., as needed
-        }),
+        body: JSON.stringify({ name, email, password }),
       });
 
-      if (!response.ok) throw new Error('Signup failed');
-      const data = await response.json();
-      const userId = data.userId; // Assuming API returns userId
-      router.push(`/profile/${userId}`);
-      */
+      if (!response.ok) {
+        throw new Error(await response.text());
+      }
 
-      /*
-      // Google OAuth Example 
-      // Requires @react-oauth/google package or similar
-      import { useGoogleLogin } from '@react-oauth/google';
-      const googleLogin = useGoogleLogin({
-        onSuccess: async (tokenResponse) => {
-          const res = await fetch('/api/auth/google-signup', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ token: tokenResponse.access_token }),
-          });
-          if (!res.ok) throw new Error('Google signup failed');
-          const data = await res.json();
-          const userId = data.userId; // Assuming API returns userId
-          router.push(`/profile/${userId}`);
-        },
-        onError: () => {
-          throw new Error('Google authentication failed');
-        },
-      });
-      googleLogin(); // Trigger Google signup
-      */
+      router.push('/dashboard');
     } catch (err) {
-      setError('Failed to create account .');
-      console.error(err);
+      setError(err instanceof Error ? err.message : 'An error occurred');
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100">
-      <AuthForm type="create account" onSubmit={handleSubmit} loading={loading} />
-      {error && <p className="mt-2 text-red-500">{error}</p>}
+    <div className="flex min-h-screen items-center justify-center bg-gray-50 p-4">
+      <AuthForm
+        type="create account"
+        onSubmit={handleSubmit}
+        loading={loading}
+        error={error}
+        brand={<BrandName />}
+      />
     </div>
   );
-};
+}
 
-export default SignupPage;
