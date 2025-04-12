@@ -1,3 +1,8 @@
+
+
+
+
+
 "use client"
 
 import { useState, useEffect } from "react"
@@ -172,7 +177,7 @@ export default function PrimaryNavBar() {
 
                 {activeMegaMenu === index && item.megaMenu && (
                   <div className="pl-4 py-1">
-                    <div className="grid grid-cols-1 gap-2">
+                    <div className="grid grid-cols-1 gap-3">
                       {item.megaMenu.content.map((section, sectionIndex) => (
                         <div key={sectionIndex}>
                           {section.title && (

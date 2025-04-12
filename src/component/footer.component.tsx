@@ -1,6 +1,10 @@
-// components/Footer.tsx
-"use client";
 
+
+
+
+
+
+"use client";
 import {BRAND_NAME, FOOTER_LINKS, SOCIAL_MEDIA, PAYMENT_METHODS, NEWSLETTER, } from "@/constant/footer.constant";
 import Link from "next/link";
 import { useState } from "react";

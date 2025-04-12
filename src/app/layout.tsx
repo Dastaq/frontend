@@ -1,16 +1,19 @@
+
+
+
 import type { Metadata } from "next";
 import { Poppins, Montserrat } from "next/font/google";
 import "./globals.css";
 import AuthProvider from "./provider";
 
-// Primary font: Poppins (modern, clean)
+// Poppins (modern, clean)
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
-// Secondary font: Montserrat (for headings)
+// Montserrat (for headings)
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
@@ -31,6 +34,7 @@ export default function RootLayout({
     <html lang="en" className={`${poppins.variable} ${montserrat.variable}`}>
       <body className="font-sans mx-auto antialiased select-none bg-gray-150">
            <AuthProvider>
+            
               {children}
            </AuthProvider>
       </body>

@@ -1,11 +1,11 @@
-'use client'
 
+
+
+'use client'
 import Link from "next/link"
 import { rightLinks, topLinks } from "../constant/announcement.constant"
 
-
 const TopAnnouncementBar = () => {
- 
 
   return (
     <div className="bg-blue-500 text-white text-sm py-2 px-4">
