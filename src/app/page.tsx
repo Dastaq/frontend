@@ -1,11 +1,11 @@
 
 
 
-import { OfferBanner } from "@/component/OfferBanner.component";
-import FooterSection from "@/sections/footer.section";
-import HeroSection from "@/sections/hero.section";
-import NavbarSection from "@/sections/navbar.section";
-import ProductGrid from "@/sections/product.section";
+import { OfferBanner } from "@/component/offerBanner.component";
+import FooterSection from "@/sections/Footer.section";
+import HeroSection from "@/sections/Hero.section";
+import NavbarSection from "@/sections/Navbar.section";
+import ProductGrid from "@/sections/Product.section";
 
 export default function Home() {
   return (

@@ -4,7 +4,7 @@
 'use client';
 import { forwardRef } from 'react';
 import { Spinner } from './spinner';
-import { ButtonProps } from '@/type/button';
+import { ButtonProps } from '@/type/Button';
 
 // Define size classes for different button sizes
 const sizeClasses = {

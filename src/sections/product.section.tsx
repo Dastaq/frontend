@@ -4,7 +4,7 @@
 
 'use client';
 import { useEffect, useState } from 'react';
-import { Product } from '../type/product.type'; 
+import { Product } from '../type/Product'; 
 import { ProductCard } from '../component/productcard.component';
 import { Button } from '../component/UI/button';
 

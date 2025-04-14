@@ -26,7 +26,7 @@ export default function SignupPage() {
         throw new Error('Passwords do not match');
       }
 
-      // Replace with your actual registration logic
+      // Replace with actual registration logic
       const response = await fetch('/api/auth/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

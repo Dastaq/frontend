@@ -1,5 +1,5 @@
 // components/ui/Input.tsx
-import { InputProps } from '@/type/input';
+import { InputProps } from '@/type/Input';
 import React, { forwardRef } from 'react';
 
 

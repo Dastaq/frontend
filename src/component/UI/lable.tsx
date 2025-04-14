@@ -1,4 +1,4 @@
-import { LabelProps } from "@/type/lable"
+import { LabelProps } from "@/type/Lable"
 
 
 export function Label({ 
