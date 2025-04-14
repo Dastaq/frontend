@@ -1,15 +1,16 @@
-// types/product.type.ts
+
+
+// File : src/type/Product.ts 
 export interface Product {
-    id: number;
-    title: string;
-    price: number;
-    description?: string ;
-    category?: string | undefined;
-    imageUrl: string;
-    rating: {
-      rate: number;
-      count: number;
-    };
-    storeName?: string;
-  }
-  
+  id: string
+  title: string
+  price: number;
+  description?: string;
+  imageUrl: string;
+  category?: string | undefined;
+  rating: {
+    rate: number;
+    count: number;
+  };
+  storeName?: string;
+}

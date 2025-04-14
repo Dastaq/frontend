@@ -1,6 +1,7 @@
 // import { Product, User } from "@/type/User.ts"
 
-import { Product, User } from "@/type/user"
+import { Product } from "@/type/Product"
+import { User } from "@/type/user"
 
 
 // Simulated API calls with mock data
